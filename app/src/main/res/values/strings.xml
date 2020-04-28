@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">test</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Настройки</string>
+
+    <string name="menu_home">Новости</string>
+    <string name="menu_gallery">Карта</string>
+    <string name="menu_slideshow">Достопримечательности</string>
+
+    <string-array name="attractions">
+        <item>Памятник клавиатуре</item>
+        <item>Ельцин-центр</item>
+        <item>Дом Севастьянова</item>
+        <item>Храм на Крови</item>
+        <item>Памятник Татищеву и де Геннину</item>
+        <item>Екатеринбургский цирк</item>
+        <item>Ново-Тихвинский монастырь</item>
+        <item>Чёрный тюльпан</item>
+        <item>Усадьба Расторгуевых - Харитоновых</item>
+        <item>Памятник Свердлову</item>
+    </string-array>
+
+    <string-array name="addresses">
+        <item>Ул. Горького, 14а</item>
+        <item>Ул. Бориса Ельцина, 3</item>
+        <item>Проспект Ленина, 35</item>
+        <item>Царская ул., 10</item>
+        <item>Площадь Труда</item>
+        <item>Ул. 8 марта, 43</item>
+        <item>Ул. Зелёная Роща, 1</item>
+        <item>Площадь Советской Армии</item>
+        <item>Ул. Карла Либкнехта, 44</item>
+        <item>Площадь Парижской коммуны</item>
+    </string-array>
+
+    <string name="home_second">Home Second</string>
+</resources>
