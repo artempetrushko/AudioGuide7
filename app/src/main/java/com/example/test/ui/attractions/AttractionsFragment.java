@@ -22,6 +22,7 @@ public class AttractionsFragment extends Fragment {
     RecyclerView recyclerview;
     String s1[];
     String s2[];
+    String descriptions[];
     int[] images = {R.drawable.keyboard_memorial, R.drawable.yeltsin_center, R.drawable.sevastyanov_house,
                     R.drawable.temple_na_krovi, R.drawable.tatischev_memorial, R.drawable.ekaterinburg_circus,
                     R.drawable.novotichvinskiy_monastery, R.drawable.black_tulip, R.drawable.rastorguev_manor,
@@ -40,22 +41,14 @@ public class AttractionsFragment extends Fragment {
             }
         });*/
 
-        /*recyclerview = recyclerview.findViewById(R.id.recyclerview);
-
-        s1 = getResources().getStringArray(R.array.attractions);
-        s1 = getResources().getStringArray(R.array.addresses);
-
-
-        recyclerview.setAdapter(attractionAdapter);
-        recyclerview.setLayoutManager(new LinearLayoutManager(getActivity()));*/
-
         View view = inflater.inflate(R.layout.fragment_attractions, container, false);
 
         recyclerview = (RecyclerView)view.findViewById(R.id.recyclerview);
         s1 = getResources().getStringArray(R.array.attractions);
         s2 = getResources().getStringArray(R.array.addresses);
+        descriptions = getResources().getStringArray((R.array.descriptions));
 
-        AttractionAdapter attractionAdapter = new AttractionAdapter(getActivity(), s1, s2, images);
+        AttractionAdapter attractionAdapter = new AttractionAdapter(getActivity(), s1, s2, descriptions, images);
 
         recyclerview.setAdapter(attractionAdapter);
         recyclerview.setLayoutManager(new LinearLayoutManager(getActivity()));

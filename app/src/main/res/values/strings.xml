@@ -37,5 +37,22 @@
         <item>Площадь Парижской коммуны</item>
     </string-array>
 
+    <string-array name="descriptions">
+        <item>Описание памятника клавиатуре</item>
+        <item>Описание Ельцин-центра</item>
+        <item>Описание Дома Севастьянова</item>
+        <item>Описание Храма на Крови</item>
+        <item>Описание памятника Татищеву и де Геннину</item>
+        <item>Описание Екатеринбургского цирка</item>
+        <item>Описание Ново-Тихвинского монастыря</item>
+        <item>Описание Чёрного тюльпана</item>
+        <item>Описание Усадьбы Расторгуевых - Харитоновых</item>
+        <item>Описание памятника Свердлову</item>
+    </string-array>
+
     <string name="home_second">Home Second</string>
+    <string name="title_activity_map">Map</string>
+
+    <string name="play_str">PLAY</string>
+    <string name="pause_str">PAUSE</string>
 </resources>

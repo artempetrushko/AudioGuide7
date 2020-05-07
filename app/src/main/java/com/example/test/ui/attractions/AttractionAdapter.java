@@ -22,13 +22,14 @@ import java.util.zip.Inflater;
 
 public class AttractionAdapter extends RecyclerView.Adapter<AttractionAdapter.ViewHolder> {
 
-    String data1[], data2[];
+    String data1[], data2[], data3[];
     int images[];
     Context context;
-    public AttractionAdapter(Context ct, String[] s1, String[] s2, int img[]) {
+    public AttractionAdapter(Context ct, String[] s1, String[] s2, String[] descriptions, int img[]) {
         context = ct;
         data1 = s1;
         data2 = s2;
+        data3 = descriptions;
         images = img;
     }
 
@@ -36,7 +37,7 @@ public class AttractionAdapter extends RecyclerView.Adapter<AttractionAdapter.Vi
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(context);
-        View view = inflater.inflate(R.layout.attraction_item, parent, false);
+        View view = inflater.inflate(R.layout.attraction_cardview, parent, false);
         return new ViewHolder(view);
     }
 
@@ -52,6 +53,7 @@ public class AttractionAdapter extends RecyclerView.Adapter<AttractionAdapter.Vi
                 Intent intent = new Intent(context, AttractionActivity.class);
                 intent.putExtra("data1", data1[position]);
                 intent.putExtra("data2", data2[position]);
+                intent.putExtra("data3", data3[position]);
                 intent.putExtra("myImage", images[position]);
                 context.startActivity(intent);
 
