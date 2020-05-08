@@ -16,11 +16,12 @@ import android.widget.Toast;
 
 public class AttractionActivity extends AppCompatActivity {
 
-    ImageView mainImageView;
+    ImageView mainImageView, galleryImage1View, galleryImage2View, galleryImage3View;
     TextView title, address, description;
 
     String data1, data2, data3;
-    int myImage;
+    int myImage, gallery_image1, gallery_image2, gallery_image3;
+    int audioguide;
 
     private Button buttonPlayStop;
     private MediaPlayer mediaPlayer;
@@ -37,10 +38,14 @@ public class AttractionActivity extends AppCompatActivity {
         title = findViewById(R.id.title);
         address = findViewById(R.id.address);
         description = findViewById(R.id.attraction_description);
+        galleryImage1View = findViewById(R.id.image_gallery1);
+        galleryImage2View = findViewById(R.id.image_gallery2);
+        galleryImage3View = findViewById(R.id.image_gallery3);
 
         getData();
         setData();
-        initViews();
+        initViews(audioguide);
+
     }
 
     private void getData() {
@@ -51,6 +56,11 @@ public class AttractionActivity extends AppCompatActivity {
             data2 = getIntent().getStringExtra("data2");
             data3 = getIntent().getStringExtra("data3");
             myImage = getIntent().getIntExtra("myImage", 1);
+            gallery_image1 = getIntent().getIntExtra("gallery_image1", 1);
+            gallery_image2 = getIntent().getIntExtra("gallery_image2", 1);
+            gallery_image3 = getIntent().getIntExtra("gallery_image3", 1);
+            audioguide = getIntent().getIntExtra("audioguide", 1);
+
         }
         else {
             Toast.makeText(this, "No data.", Toast.LENGTH_SHORT).show();
@@ -61,13 +71,16 @@ public class AttractionActivity extends AppCompatActivity {
         title.setText(data1);
         address.setText(data2);
         mainImageView.setImageResource(myImage);
+        galleryImage1View.setImageResource(gallery_image1);
+        galleryImage2View.setImageResource(gallery_image2);
+        galleryImage3View.setImageResource(gallery_image3);
         description.setText(data3);
     }
 
     @SuppressLint("ClickableViewAccessibility")
-    private void initViews() {
+    private void initViews(int audio_id) {
         buttonPlayStop = (Button) findViewById(R.id.ButtonPlayStop);
-        mediaPlayer = MediaPlayer.create(this, R.raw.demon_speeding);
+        mediaPlayer = MediaPlayer.create(this, audio_id);
 
         seekBar = (SeekBar) findViewById(R.id.seekBar);
         seekBar.setMax(mediaPlayer.getDuration());

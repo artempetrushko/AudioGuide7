@@ -23,14 +23,20 @@ import java.util.zip.Inflater;
 public class AttractionAdapter extends RecyclerView.Adapter<AttractionAdapter.ViewHolder> {
 
     String data1[], data2[], data3[];
-    int images[];
+    int images[], gallery_images1[], gallery_images2[], gallery_images3[], audioguides[];
     Context context;
-    public AttractionAdapter(Context ct, String[] s1, String[] s2, String[] descriptions, int img[]) {
+    public AttractionAdapter(Context ct, String[] s1, String[] s2, String[] descriptions, int img[],
+                             int[] gallery_img1, int[] gallery_img2, int[] gallery_img3, int[] audios)
+    {
         context = ct;
         data1 = s1;
         data2 = s2;
         data3 = descriptions;
         images = img;
+        gallery_images1 = gallery_img1;
+        gallery_images2 = gallery_img2;
+        gallery_images3 = gallery_img3;
+        audioguides = audios;
     }
 
     @NonNull
@@ -55,6 +61,10 @@ public class AttractionAdapter extends RecyclerView.Adapter<AttractionAdapter.Vi
                 intent.putExtra("data2", data2[position]);
                 intent.putExtra("data3", data3[position]);
                 intent.putExtra("myImage", images[position]);
+                intent.putExtra("gallery_image1", gallery_images1[position]);
+                intent.putExtra("gallery_image2", gallery_images2[position]);
+                intent.putExtra("gallery_image3", gallery_images3[position]);
+                intent.putExtra("audioguide", audioguides[position]);
                 context.startActivity(intent);
 
             }

@@ -88,21 +88,21 @@
                 android:orientation="horizontal">
 
                 <ImageView
-                    android:id="@+id/imageView3"
+                    android:id="@+id/image_gallery1"
                     android:layout_width="168dp"
                     android:layout_height="111dp"
                     android:layout_weight="1"
                     app:srcCompat="@drawable/keyboard_memorial" />
 
                 <ImageView
-                    android:id="@+id/imageView4"
+                    android:id="@+id/image_gallery2"
                     android:layout_width="168dp"
                     android:layout_height="111dp"
                     android:layout_weight="1"
                     app:srcCompat="@drawable/keyboard_memorial" />
 
                 <ImageView
-                    android:id="@+id/imageView5"
+                    android:id="@+id/image_gallery3"
                     android:layout_width="168dp"
                     android:layout_height="111dp"
                     android:layout_weight="1"
