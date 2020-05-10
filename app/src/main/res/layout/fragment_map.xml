@@ -4,12 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MapActivity">
+    tools:context=".ui.map.MapFragment">
 
-    <com.google.android.gms.maps.MapView
+    <fragment
         android:id="@+id/map"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:name="com.google.android.gms.maps.SupportMapFragment">
-    </com.google.android.gms.maps.MapView>
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        tools:context=".ui.map.MapFragment">
+    </fragment>
 </androidx.constraintlayout.widget.ConstraintLayout>

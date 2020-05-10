@@ -33,7 +33,7 @@
         -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="@string/AIzaSyAdl0tGnNrhydghues0l9ZUHHPWPNAG03A" />
+            android:value="@string/google_maps_key" />
 
         <meta-data
             android:name="com.google.android.gms.version"
@@ -41,7 +41,7 @@
 
         <activity
             android:name=".MapActivity"
-            android:label="@string/title_activity_map"></activity>
+            android:label="@string/title_activity_map"/>
         <activity
             android:name=".AttractionActivity"
             android:label="Подробнее"

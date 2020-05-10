@@ -18,7 +18,6 @@ import com.example.test.R;
 
 public class AttractionsFragment extends Fragment {
 
-    private AttractionsViewModel attractionsViewModel;
     RecyclerView recyclerview;
     String s1[];
     String s2[];
@@ -46,16 +45,6 @@ public class AttractionsFragment extends Fragment {
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        /*attractionsViewModel =
-                ViewModelProviders.of(this).get(AttractionsViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_attractions, container, false);
-        final TextView textView = root.findViewById(R.id.text_slideshow);
-        attractionsViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
-            @Override
-            public void onChanged(@Nullable String s) {
-                textView.setText(s);
-            }
-        });*/
 
         View view = inflater.inflate(R.layout.fragment_attractions, container, false);
 
