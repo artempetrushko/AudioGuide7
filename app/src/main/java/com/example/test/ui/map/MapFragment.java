@@ -46,13 +46,13 @@ public class MapFragment extends Fragment implements OnMapReadyCallback{
     public void onMapReady(GoogleMap googleMap) {
          GoogleMap mMap = googleMap;
 
-        LatLng keyboard_memorial = new LatLng(56.832389, 60.607548);
-        mMap.addMarker(new MarkerOptions().position(keyboard_memorial).title("Памятник клавиатуре"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(keyboard_memorial));
+        LatLng jackson_memorial = new LatLng(56.8295, 60.5971917);
+        mMap.addMarker(new MarkerOptions().position(jackson_memorial).title("Памятник Майклу Джексону"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(jackson_memorial));
 
-        LatLng yeltsin_center = new LatLng(56.8452090, 60.5897850);
-        mMap.addMarker(new MarkerOptions().position(yeltsin_center).title("Ельцин-центр"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(yeltsin_center));
+        LatLng visotskiy_skyscraper = new LatLng(56.836092, 60.614473);
+        mMap.addMarker(new MarkerOptions().position(visotskiy_skyscraper).title("Небоскрёб Высоцкий"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(visotskiy_skyscraper));
 
         LatLng sevastyanov_house = new LatLng(56.839033, 60.60593);
         mMap.addMarker(new MarkerOptions().position(sevastyanov_house).title("Дом Севастьянова"));
@@ -62,13 +62,13 @@ public class MapFragment extends Fragment implements OnMapReadyCallback{
         mMap.addMarker(new MarkerOptions().position(temple_on_blood).title("Храм на Крови"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(temple_on_blood));
 
-        LatLng tatischev_memorial = new LatLng(56.838167, 60.605861);
-        mMap.addMarker(new MarkerOptions().position(tatischev_memorial).title("Памятник Татищеву и де Геннину"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(tatischev_memorial));
+        LatLng popov_museum = new LatLng(56.8334760, 60.6129970);
+        mMap.addMarker(new MarkerOptions().position(popov_museum).title("Музей радио имени А.С.Попова"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(popov_museum));
 
-        LatLng ekaterinburg_circus = new LatLng(56.8259266, 60.604886);
-        mMap.addMarker(new MarkerOptions().position(ekaterinburg_circus).title("Екатеринбургский цирк"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(ekaterinburg_circus));
+        LatLng mayakovskiy_park = new LatLng(56.811389, 60.645278);
+        mMap.addMarker(new MarkerOptions().position(mayakovskiy_park).title("ЦПКиО имени В.В.Маяковского"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(mayakovskiy_park));
 
         LatLng novotikhvinskiy_monastery = new LatLng(56.822778, 60.598611);
         mMap.addMarker(new MarkerOptions().position(novotikhvinskiy_monastery).title("Ново-Тихвинский монастырь"));
@@ -82,8 +82,8 @@ public class MapFragment extends Fragment implements OnMapReadyCallback{
         mMap.addMarker(new MarkerOptions().position(rastorguev_manor).title("Усадьба Расторгуевых-Харитоновых"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(rastorguev_manor));
 
-        LatLng sverdlov_memorial = new LatLng(56.839722, 60.616389);
-        mMap.addMarker(new MarkerOptions().position(sverdlov_memorial).title("Памятник Свердлову"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(sverdlov_memorial));
+        LatLng dendropark = new LatLng(56.848, 60.651);
+        mMap.addMarker(new MarkerOptions().position(dendropark).title("Екатеринбургский дендропарк"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(dendropark));
     }
 }

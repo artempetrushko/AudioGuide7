@@ -85,21 +85,21 @@
                     android:layout_width="168dp"
                     android:layout_height="111dp"
                     android:layout_weight="1"
-                    app:srcCompat="@drawable/keyboard_memorial" />
+                    app:srcCompat="@drawable/sevastyanov_house" />
 
                 <ImageView
                     android:id="@+id/image_gallery2"
                     android:layout_width="168dp"
                     android:layout_height="111dp"
                     android:layout_weight="1"
-                    app:srcCompat="@drawable/keyboard_memorial" />
+                    app:srcCompat="@drawable/sevastyanov_house" />
 
                 <ImageView
                     android:id="@+id/image_gallery3"
                     android:layout_width="168dp"
                     android:layout_height="111dp"
                     android:layout_weight="1"
-                    app:srcCompat="@drawable/keyboard_memorial" />
+                    app:srcCompat="@drawable/sevastyanov_house" />
 
             </LinearLayout>
         </HorizontalScrollView>
