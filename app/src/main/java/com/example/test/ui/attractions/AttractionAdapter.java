@@ -66,10 +66,8 @@ public class AttractionAdapter extends RecyclerView.Adapter<AttractionAdapter.Vi
                 intent.putExtra("gallery_image3", gallery_images3[position]);
                 intent.putExtra("audioguide", audioguides[position]);
                 context.startActivity(intent);
-
             }
         });
-
     }
 
     @Override
