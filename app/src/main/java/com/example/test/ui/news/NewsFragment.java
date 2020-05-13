@@ -20,7 +20,7 @@ public class NewsFragment extends Fragment {
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        newsViewModel =
+        /*newsViewModel =
                 ViewModelProviders.of(this).get(NewsViewModel.class);
         View root = inflater.inflate(R.layout.fragment_news, container, false);
         final TextView textView = root.findViewById(R.id.text_home);
@@ -29,7 +29,8 @@ public class NewsFragment extends Fragment {
             public void onChanged(@Nullable String s) {
                 textView.setText(s);
             }
-        });
+        });*/
+        View root = inflater.inflate(R.layout.fragment_news, container, false);
         return root;
     }
 }
