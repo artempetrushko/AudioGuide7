@@ -70,10 +70,10 @@
             android:id="@+id/horizontalScrollView"
             android:layout_width="387dp"
             android:layout_height="111dp"
-            android:layout_marginTop="200dp"
+            android:layout_marginTop="20dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/ButtonPlayStop">
+            app:layout_constraintTop_toBottomOf="@id/galleryText">
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -114,7 +114,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.094"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/attraction_description"
+            app:layout_constraintTop_toBottomOf="@id/titleImage"
             app:srcCompat="@android:drawable/ic_media_play" />
 
         <SeekBar
@@ -125,7 +125,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.365"
             app:layout_constraintStart_toEndOf="@+id/ButtonPlayStop"
-            app:layout_constraintTop_toBottomOf="@id/attraction_description" />
+            app:layout_constraintTop_toBottomOf="@id/titleImage" />
 
         <TextView
             android:id="@+id/attraction_description"
@@ -137,6 +137,20 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/titleImage"/>
+            app:layout_constraintTop_toBottomOf="@id/ButtonPlayStop"/>
+
+        <TextView
+            android:id="@+id/galleryText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Галерея"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/attraction_description" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
